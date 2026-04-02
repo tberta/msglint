@@ -3980,9 +3980,6 @@ int main(int argc, char **argv)
 
 	r = parsemessage(buf, used);
 
-	/* close file */
-	if (infile != stdin) fclose(infile);
-
 	/* release buffer */
 	free(basebuf);
     } while (r == 0 && *argv != NULL);
